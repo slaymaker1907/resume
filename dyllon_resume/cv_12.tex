@@ -19,7 +19,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4
 
 \begin{document}
 
@@ -44,7 +44,7 @@
 % Education
 %------------------------------------------------
 
-\section{Education} 
+\section{Education}
 
 \subsection{University of Utah}
 
@@ -74,8 +74,8 @@ Summa Cum Laude
 
 \subsection{Undergraduate}
 
-Linear Algebra \\
-Object Oriented Programming \\
+Computer Networking \\
+Databases \\
 Data Structures and Algorithms \\
 Probability and Statistics \\
 Fundamentals of Digital System Design \\
@@ -92,24 +92,29 @@ Software Practice \\
 \section{Skills}
 
 \subsection{Programming Languages}
-\begin{itemize}
-\item Java
+\begin{tightitemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space.
 \item Python
+\item Haskell
+\item Javascript
 \item Amazon Web Services
-\item C++ 
-\item Arduino
+\item Java
+\item C++
+\item SQL
 \item C\#
 \item Verilog
-\end{itemize}
+\end{tightitemize}
 
 \subsection{Programming Skills}
-\begin{itemize}
+\begin{tightitemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space.
+\item Database Schema Design
 \item Test Driven Development
 \item Automated UI Testing
 \item General-Purpose GPU Computing
 \item Functional Programming
 \item Parallel Programming
-\end{itemize}
+\end{tightitemize}
 
 \sectionspace % Some whitespace after the section
 
@@ -142,13 +147,22 @@ GitHub:// \href{https://github.com/}{\bf slaymaker1907} \\
 
 \section{Experience}
 
-\runsubsection{University of Utah School of Computing}
-\descript{| Teaching Assistant}
-\location{ Jan. 2016 - present | Salt Lake City, UT}
+\runsubsection{Goldman Sachs}
+\descript{| Private Wealth Management Technology Intern}
+\location{ June. 2016 - present | Salt Lake City, UT}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space.
 \begin{tightitemize}
-\item Taught small to medium sized groups of students.
-\item Taught students about assembly programming, computer architecture, and basic digital logic design.
+\item Improved existing internal library by fixing thread race conditions.
+\item Developed REST backend for document metadata repository using Java Dropwizard.
+\end{tightitemize}
+
+%------------------------------------------------
+
+\runsubsection{University of Utah School of Computing}
+\descript{| Teaching Assistant}
+\location{ Jan. 2016 - May 2016 | Salt Lake City, UT}
+\begin{tightitemize}
+\item Taught small to medium sized groups of students about assembly programming and computer architecture.
 \item Designed automated test framework for the MARS MIPS assembly simulation program to grade student work quickly and fairly.
 \end{tightitemize}
 
@@ -159,9 +173,7 @@ GitHub:// \href{https://github.com/}{\bf slaymaker1907} \\
 \location{June 2015 - Aug. 2015 | Salt Lake City, UT}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space.
 \begin{tightitemize}
-\item Developed complex tests for the OpenDOF distributed object framework in C\#, C, and Java. (OpenDOF.org)
-\item Wrote scripts to run those tests on the Panasonic Distrubted Testing Framework (which ran on AWS).
-\item Ensured that all documentation for components was present and accurate.
+\item Developed complex integration tests for the OpenDOF distributed object framework in C\#, C, and Java. (OpenDOF.org)
 \item Performed full QA and testing of the OpenDOF Interface Repository 1.0 (https://interface.opendof.org/)
 \end{tightitemize}
 
@@ -175,9 +187,7 @@ GitHub:// \href{https://github.com/}{\bf slaymaker1907} \\
 \location{Dec. 2014 - May 2015 | Layton, UT}
 \begin{tightitemize}
 \item Wrote automated UI tests for Claw (GUI for image processing on drone images).
-\item Used .NET API to simulate user interaction.
-\item Used TFS version control in Visual Studio including practicing code review, working in multiple branches, and merging conflicting change sets.
-\item Developed a class that was able to detect from two images of text with differing texts if one was bolded.
+\item Developed a module that was able to detect from two images of text with differing texts if one was bolded.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -190,7 +200,7 @@ GitHub:// \href{https://github.com/}{\bf slaymaker1907} \\
 
 \runsubsection{Triangle Fraternity - Utah Chapter}
 \descript{ | Vice President}
-\location{Dec. 2015 - present | Salt Lake City, UT}
+\location{Dec. 2015 - June 2016 | Salt Lake City, UT}
 \begin{tightitemize}
 \item Headed planning committees for large recreational events (60+ people).
 \item Designed website including alternative voting app (utahtriangle.com) using Django.
@@ -204,7 +214,8 @@ GitHub:// \href{https://github.com/}{\bf slaymaker1907} \\
 % Special Projects
 %------------------------------------------------
 
-\section{Special Projects} 
+\section{Special Projects}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space.
 \begin{tightitemize}
 \item Developed a robust timing framework in Java that did automatic statistical analysis.
 \item Infrared communication system including an error detection and correction scheme.
